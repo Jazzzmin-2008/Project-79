@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <script src="main.js"></script>
+        <title>Pizzeria</title>
+    </head>
+
+    <body>
+        <div class="topnav">
+            <a  class="active" href="#">Pizzeria</a>
+            <div class="topnav-right">
+                <a href="#viewblock">View Menu</a>
+                <a href="#addtoppings">Add Toppings</a>
+            </div>
+        </div>
+
+        <div class="row" id="viewblock">
+            <div class="image_div">
+              <img class="img-responsive" src="https://www.eatthis.com/wp-content/uploads/2020/02/pizza-toppings-too-many.jpg">
+            </div>
+        </div>
+
+        <div class="menu-div">
+            <button id="menu-list" onclick="getmenu()">View Menu</button>
+            <div id="display_menu">
+                </div>
+                </div>
+            
+        </div>
+        <div class="newRow" id="addtoppings">
+            <div class="block1">
+              <input id="add-item" placeholder="Type to add any toppings?"/><br>
+              <button id="add-toppings" onclick="additem()">Suggest a new Pizza</button>
+            </div>
+        </div>
+
+        <div class="block2">
+            <div id="display_addmenu"></div>
+        </div>
+
+        <div>
+            <image class="img-responsive" src="https://www.recipetineats.com/wp-content/uploads/2020/05/Pizza-Toppings.jpg">
+            </image>
+        </div>
+
+    </body>
+</html>
