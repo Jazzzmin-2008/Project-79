@@ -1,47 +1,49 @@
 <html>
-    <head>
-        <link rel="stylesheet" href="style.css">
-        <script src="main.js"></script>
-        <title>Pizzeria</title>
-    </head>
+<head>
+    <title>Pizzaria</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+<script src="main.js"></script>
+</head>
 
-    <body>
-        <div class="topnav">
-            <a  class="active" href="#">Pizzeria</a>
-            <div class="topnav-right">
-                <a href="#viewblock">View Menu</a>
-                <a href="#addtoppings">Add Toppings</a>
-            </div>
+<body>
+    <div class="topnav">
+        <a class="active" href="#">Pizzaria</a>
+        <div class="topnav-right">
+         <a href="#viewblock">View Menu</a>
+         <a href="#addTopings">Add Menu</a>
         </div>
+    </div>
 
-        <div class="row" id="viewblock">
-            <div class="image_div">
-              <img class="img-responsive" src="https://www.eatthis.com/wp-content/uploads/2020/02/pizza-toppings-too-many.jpg">
-            </div>
+    <div class="row" id="viewblock">
+        <div  class="img_div"> 
+            <img class="img-responsive"  src="https://www.biggerbolderbaking.com/wp-content/uploads/2019/07/15-Minute-Pizza-WS-Thumbnail.png">
         </div>
+        <div class="menu_div">
+            <button id="menu_list" onclick="getmenu()">Show Menu</button>
+           <div id="display_menu"></div>
+        </div>
+    </div>
 
-        <div class="menu-div">
-            <button id="menu-list" onclick="getmenu()">View Menu</button>
-            <div id="display_menu">
-                </div>
-                </div>
-            
+    <div class="newRow" id="addTopings">
+        <div class="block1">
+            <input id="add_item" placeholder="Type here to add toppings?"/></br>
+            <button id="add_toppings" onclick="add_item()" >Recommend a new Pizza</button>
         </div>
-        <div class="newRow" id="addtoppings">
-            <div class="block1">
-              <input id="add-item" placeholder="Type to add any toppings?"/><br>
-              <button id="add-toppings" onclick="additem()">Suggest a new Pizza</button>
-            </div>
-        </div>
-
         <div class="block2">
-            <div id="display_addmenu"></div>
+            <div id="display_addedmenu">
+            </div>
         </div>
 
-        <div>
-            <image class="img-responsive" src="https://www.recipetineats.com/wp-content/uploads/2020/05/Pizza-Toppings.jpg">
-            </image>
-        </div>
+    </div>
 
-    </body>
-</html>
+    <div>
+        <img class="img-responsive"  src="https://www.recipetineats.com/wp-content/uploads/2020/05/Pizza-Toppings.jpg">
+    </div>
+
+</body>
+</html> 
